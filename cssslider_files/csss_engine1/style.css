@@ -15,8 +15,8 @@
 .csslider1 {
   display: inline-block;
   position: relative;
+  max-width: 640px;
   
-  height: 360px;
   
 
   width: 100%;
@@ -39,7 +39,7 @@
   line-height: 0;
   margin: 0 auto;
   padding: 0;
-  height: 360px;
+  
   overflow: hidden;
   white-space: nowrap;
 }
@@ -133,8 +133,8 @@
 
 
 
-.csslider1 > #cs_slide1_0:checked ~ .cs_arrowprev > label.num5,
-.csslider1 > #cs_pause1_0:checked ~ .cs_arrowprev > label.num5,
+.csslider1 > #cs_slide1_0:checked ~ .cs_arrowprev > label.num4,
+.csslider1 > #cs_pause1_0:checked ~ .cs_arrowprev > label.num4,
 .csslider1 > #cs_slide1_0:checked ~ .cs_arrownext > label.num1,
 .csslider1 > #cs_pause1_0:checked ~ .cs_arrownext > label.num1, 
 .csslider1 > #cs_slide1_1:checked ~ .cs_arrowprev > label.num0,
@@ -151,56 +151,47 @@
 .csslider1 > #cs_pause1_3:checked ~ .cs_arrownext > label.num4, 
 .csslider1 > #cs_slide1_4:checked ~ .cs_arrowprev > label.num3,
 .csslider1 > #cs_pause1_4:checked ~ .cs_arrowprev > label.num3,
-.csslider1 > #cs_slide1_4:checked ~ .cs_arrownext > label.num5,
-.csslider1 > #cs_pause1_4:checked ~ .cs_arrownext > label.num5, 
-.csslider1 > #cs_slide1_5:checked ~ .cs_arrowprev > label.num4,
-.csslider1 > #cs_pause1_5:checked ~ .cs_arrowprev > label.num4,
-.csslider1 > #cs_slide1_5:checked ~ .cs_arrownext > label.num0,
-.csslider1 > #cs_pause1_5:checked ~ .cs_arrownext > label.num0 {
+.csslider1 > #cs_slide1_4:checked ~ .cs_arrownext > label.num0,
+.csslider1 > #cs_pause1_4:checked ~ .cs_arrownext > label.num0 {
   opacity: 1;
   z-index: 5;
 }
 
 
 @-webkit-keyframes arrow1 {
-  0%, 16.656666666666666% { opacity: 1; z-index: 5; }
-  16.666666666666668%, 100%  { opacity: 0; z-index: -1; }
+  0%, 19.99% { opacity: 1; z-index: 5; }
+  20%, 100%  { opacity: 0; z-index: -1; }
 }
 @keyframes arrow1 {
-  0%, 16.656666666666666% { opacity: 1; z-index: 5; }
-  16.666666666666668%, 100%  { opacity: 0; z-index: -1; }
+  0%, 19.99% { opacity: 1; z-index: 5; }
+  20%, 100%  { opacity: 0; z-index: -1; }
 }
 
 
-.csslider1 > #cs_play1:checked ~ .cs_arrowprev > label.num5,
+.csslider1 > #cs_play1:checked ~ .cs_arrowprev > label.num4,
 .csslider1 > #cs_play1:checked ~ .cs_arrownext > label.num1 {
-  -webkit-animation: arrow1 48000ms  -2000ms;
-  animation: arrow1 48000ms  -2000ms;
+  -webkit-animation: arrow1 40000ms infinite -2000ms;
+  animation: arrow1 40000ms infinite -2000ms;
 }
 .csslider1 > #cs_play1:checked ~ .cs_arrowprev > label.num0,
 .csslider1 > #cs_play1:checked ~ .cs_arrownext > label.num2 {
-  -webkit-animation: arrow1 48000ms  6000ms;
-  animation: arrow1 48000ms  6000ms;
+  -webkit-animation: arrow1 40000ms infinite 6000ms;
+  animation: arrow1 40000ms infinite 6000ms;
 }
 .csslider1 > #cs_play1:checked ~ .cs_arrowprev > label.num1,
 .csslider1 > #cs_play1:checked ~ .cs_arrownext > label.num3 {
-  -webkit-animation: arrow1 48000ms  14000ms;
-  animation: arrow1 48000ms  14000ms;
+  -webkit-animation: arrow1 40000ms infinite 14000ms;
+  animation: arrow1 40000ms infinite 14000ms;
 }
 .csslider1 > #cs_play1:checked ~ .cs_arrowprev > label.num2,
 .csslider1 > #cs_play1:checked ~ .cs_arrownext > label.num4 {
-  -webkit-animation: arrow1 48000ms  22000ms;
-  animation: arrow1 48000ms  22000ms;
+  -webkit-animation: arrow1 40000ms infinite 22000ms;
+  animation: arrow1 40000ms infinite 22000ms;
 }
 .csslider1 > #cs_play1:checked ~ .cs_arrowprev > label.num3,
-.csslider1 > #cs_play1:checked ~ .cs_arrownext > label.num5 {
-  -webkit-animation: arrow1 48000ms  30000ms;
-  animation: arrow1 48000ms  30000ms;
-}
-.csslider1 > #cs_play1:checked ~ .cs_arrowprev > label.num4,
 .csslider1 > #cs_play1:checked ~ .cs_arrownext > label.num0 {
-  -webkit-animation: arrow1 48000ms  38000ms;
-  animation: arrow1 48000ms  38000ms;
+  -webkit-animation: arrow1 40000ms infinite 30000ms;
+  animation: arrow1 40000ms infinite 30000ms;
 }
 
 
@@ -240,8 +231,8 @@
   opacity: 0;
   z-index: 1;
   line-height: 0;
-  left: -0px;
-  top: -0px;
+  left: -42.5px;
+  top: -48px;
 }
 .csslider1 > .cs_bullets > label > .cs_thumb > img {
   max-width: none;
@@ -281,11 +272,11 @@
   opacity: 1;
 }
 .csslider1 .cs_gestures.cs_show img {
-  width: 16.666666666666668%;
+  width: 20%;
 }
 .csslider1 .cs_gestures.cs_show .cs_first_img {
   position: absolute;
-  left: -16.666666666666668%;
+  left: -20%;
   top: 0;
 }
 .csslider1 .cs_gestures.cs_show .cs_last_img {
@@ -298,7 +289,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: 600%;
+  width: 500%;
 }
 /* ------------- /General Gestures ------------- */
 
@@ -317,9 +308,6 @@
 }
 .csslider1 > ul > .slide.num4 {
   left: 400%;
-}
-.csslider1 > ul > .slide.num5 {
-  left: 500%;
 }
  
 
@@ -349,11 +337,6 @@
   -webkit-transform: translateX(-400%);
   transform: translateX(-400%);
 }
-.csslider1 > #cs_slide1_5:checked ~ ul > .slide,
-.csslider1 > #cs_pause1_5:checked ~ ul > .slide {
-  -webkit-transform: translateX(-500%);
-  transform: translateX(-500%);
-}
  
 
 
@@ -375,53 +358,49 @@
 
 
 @-webkit-keyframes slide1 {
-  0%, 12.5%  { -webkit-transform: translateX(0%); transform: translateX(0%); }
-  16.666666666666668%, 29.166666666666668%  { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
-  33.333333333333336%, 45.833333333333336%  { -webkit-transform: translateX(-200%); transform: translateX(-200%); }
-  50%, 62.50000000000001%  { -webkit-transform: translateX(-300%); transform: translateX(-300%); }
-  66.66666666666667%, 79.16666666666667%  { -webkit-transform: translateX(-400%); transform: translateX(-400%); }
-  83.33333333333334%, 95.83333333333333%  { -webkit-transform: translateX(-500%); transform: translateX(-500%); }
+  0%, 15%  { -webkit-transform: translateX(0%); transform: translateX(0%); }
+  20%, 35%  { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+  40%, 55%  { -webkit-transform: translateX(-200%); transform: translateX(-200%); }
+  60%, 75%  { -webkit-transform: translateX(-300%); transform: translateX(-300%); }
+  80%, 95%  { -webkit-transform: translateX(-400%); transform: translateX(-400%); }
   
 }
 @keyframes slide1 {
-  0%, 12.5%  { -webkit-transform: translateX(0%); transform: translateX(0%); }
-  16.666666666666668%, 29.166666666666668%  { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
-  33.333333333333336%, 45.833333333333336%  { -webkit-transform: translateX(-200%); transform: translateX(-200%); }
-  50%, 62.50000000000001%  { -webkit-transform: translateX(-300%); transform: translateX(-300%); }
-  66.66666666666667%, 79.16666666666667%  { -webkit-transform: translateX(-400%); transform: translateX(-400%); }
-  83.33333333333334%, 95.83333333333333%  { -webkit-transform: translateX(-500%); transform: translateX(-500%); }
+  0%, 15%  { -webkit-transform: translateX(0%); transform: translateX(0%); }
+  20%, 35%  { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+  40%, 55%  { -webkit-transform: translateX(-200%); transform: translateX(-200%); }
+  60%, 75%  { -webkit-transform: translateX(-300%); transform: translateX(-300%); }
+  80%, 95%  { -webkit-transform: translateX(-400%); transform: translateX(-400%); }
   
 }
 
 @-webkit-keyframes slide1-ie {
-  0%, 12.5%  { margin-left: 0%; }
-  16.666666666666668%, 29.166666666666668%  { margin-left: -100%; }
-  33.333333333333336%, 45.833333333333336%  { margin-left: -200%; }
-  50%, 62.50000000000001%  { margin-left: -300%; }
-  66.66666666666667%, 79.16666666666667%  { margin-left: -400%; }
-  83.33333333333334%, 95.83333333333333%  { margin-left: -500%; }
+  0%, 15%  { margin-left: 0%; }
+  20%, 35%  { margin-left: -100%; }
+  40%, 55%  { margin-left: -200%; }
+  60%, 75%  { margin-left: -300%; }
+  80%, 95%  { margin-left: -400%; }
   
 }
 @keyframes slide1-ie {
-  0%, 12.5%  { margin-left: 0%; }
-  16.666666666666668%, 29.166666666666668%  { margin-left: -100%; }
-  33.333333333333336%, 45.833333333333336%  { margin-left: -200%; }
-  50%, 62.50000000000001%  { margin-left: -300%; }
-  66.66666666666667%, 79.16666666666667%  { margin-left: -400%; }
-  83.33333333333334%, 95.83333333333333%  { margin-left: -500%; }
+  0%, 15%  { margin-left: 0%; }
+  20%, 35%  { margin-left: -100%; }
+  40%, 55%  { margin-left: -200%; }
+  60%, 75%  { margin-left: -300%; }
+  80%, 95%  { margin-left: -400%; }
   
 }
 
 .csslider1  > #cs_play1:checked ~ ul > .slide {
   
-  -webkit-animation: slide1 48000ms ;
-  animation: slide1 48000ms ;
+  -webkit-animation: slide1 40000ms infinite;
+  animation: slide1 40000ms infinite;
   
 }
 /* IE 10+ hack - cant animate translate :( */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .csslider1  > #cs_play1:checked ~ ul > .slide {
-    animation: slide1-ie 48000ms ;
+    animation: slide1-ie 40000ms infinite;
   }
 }
 
@@ -474,7 +453,7 @@
   margin-top: -28px;
   margin-left: -28px;
 
-  background-color: #CCCDFD;
+  background-color: #CBECFD;
 
   border-radius: 50%;
 }
@@ -522,7 +501,7 @@ _:-ms-input-placeholder, :root .csslider1 > .cs_arrownext > label span:after {
 
 .csslider1 > .cs_arrowprev:hover > label,
 .csslider1 > .cs_arrownext:hover > label {
-  background-color: #e6e6fe;
+  background-color: #e5f6fe;
 }
 
 .csslider1 > .cs_arrownext:hover > label span {
@@ -605,7 +584,7 @@ _:-ms-input-placeholder, :root .csslider1 > .cs_arrownext > label span:after {
   border-radius: 50%;
   margin: 0 5px;
   padding: 9px;
-  background: #CCCDFD;
+  background: #CBECFD;
 }
 
 
@@ -633,9 +612,7 @@ _:-ms-input-placeholder, :root .csslider1 > .cs_arrownext > label span:after {
 .csslider1 > #cs_slide1_3:checked ~ .cs_bullets > label.num3 > .cs_point,
 .csslider1 > #cs_pause1_3:checked ~ .cs_bullets > label.num3 > .cs_point,
 .csslider1 > #cs_slide1_4:checked ~ .cs_bullets > label.num4 > .cs_point,
-.csslider1 > #cs_pause1_4:checked ~ .cs_bullets > label.num4 > .cs_point,
-.csslider1 > #cs_slide1_5:checked ~ .cs_bullets > label.num5 > .cs_point,
-.csslider1 > #cs_pause1_5:checked ~ .cs_bullets > label.num5 > .cs_point {
+.csslider1 > #cs_pause1_4:checked ~ .cs_bullets > label.num4 > .cs_point {
   background: #3A4A5A;
 }
 
@@ -643,43 +620,38 @@ _:-ms-input-placeholder, :root .csslider1 > .cs_arrownext > label span:after {
 
 
 @keyframes bullet1 {
-  0%, 16.656666666666666%  { background: #3A4A5A; }
-  16.666666666666668%, 100% { background: transparent; }
+  0%, 19.99%  { background: #3A4A5A; }
+  20%, 100% { background: transparent; }
 }
 @-webkit-keyframes bullet1 {
-  0%, 16.656666666666666%  { background: #3A4A5A; }
-  16.666666666666668%, 100% { background: transparent; }
+  0%, 19.99%  { background: #3A4A5A; }
+  20%, 100% { background: transparent; }
 }
 
 .csslider1 > #cs_play1:checked ~ .cs_bullets > label.num0 > .cs_point,
 .csslider1 > #cs_pause1:checked ~ .cs_bullets > label.num0 > .cs_point {
-  -webkit-animation: bullet1 48000ms  -2000ms;
-  animation: bullet1 48000ms  -2000ms;
+  -webkit-animation: bullet1 40000ms infinite -2000ms;
+  animation: bullet1 40000ms infinite -2000ms;
 }
 .csslider1 > #cs_play1:checked ~ .cs_bullets > label.num1 > .cs_point,
 .csslider1 > #cs_pause1:checked ~ .cs_bullets > label.num1 > .cs_point {
-  -webkit-animation: bullet1 48000ms  6000ms;
-  animation: bullet1 48000ms  6000ms;
+  -webkit-animation: bullet1 40000ms infinite 6000ms;
+  animation: bullet1 40000ms infinite 6000ms;
 }
 .csslider1 > #cs_play1:checked ~ .cs_bullets > label.num2 > .cs_point,
 .csslider1 > #cs_pause1:checked ~ .cs_bullets > label.num2 > .cs_point {
-  -webkit-animation: bullet1 48000ms  14000ms;
-  animation: bullet1 48000ms  14000ms;
+  -webkit-animation: bullet1 40000ms infinite 14000ms;
+  animation: bullet1 40000ms infinite 14000ms;
 }
 .csslider1 > #cs_play1:checked ~ .cs_bullets > label.num3 > .cs_point,
 .csslider1 > #cs_pause1:checked ~ .cs_bullets > label.num3 > .cs_point {
-  -webkit-animation: bullet1 48000ms  22000ms;
-  animation: bullet1 48000ms  22000ms;
+  -webkit-animation: bullet1 40000ms infinite 22000ms;
+  animation: bullet1 40000ms infinite 22000ms;
 }
 .csslider1 > #cs_play1:checked ~ .cs_bullets > label.num4 > .cs_point,
 .csslider1 > #cs_pause1:checked ~ .cs_bullets > label.num4 > .cs_point {
-  -webkit-animation: bullet1 48000ms  30000ms;
-  animation: bullet1 48000ms  30000ms;
-}
-.csslider1 > #cs_play1:checked ~ .cs_bullets > label.num5 > .cs_point,
-.csslider1 > #cs_pause1:checked ~ .cs_bullets > label.num5 > .cs_point {
-  -webkit-animation: bullet1 48000ms  38000ms;
-  animation: bullet1 48000ms  38000ms;
+  -webkit-animation: bullet1 40000ms infinite 30000ms;
+  animation: bullet1 40000ms infinite 30000ms;
 }
 
 
@@ -711,12 +683,5 @@ only screen and (                max-resolution: 2dppx)  and (max-width: 480px) 
   .csslider1 > .cs_description,
   .csslider1 > .cs_bullets {
     display: none;
-  }
-}
-
-@media only screen and (max-width: 640px) {
-  .csslider1,
-  .csslider1 > ul {
-    height: auto;
   }
 }
