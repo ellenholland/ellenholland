@@ -55,7 +55,8 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #e5f2ff;
+  background: url(images/floral-paper.jpg);
   padding:50px;
   font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#727272;
