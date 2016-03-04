@@ -1,69 +1,115 @@
-@font-face {
-  font-family: 'Noto Sans';
-  font-weight: 400;
-  font-style: normal;
-  src: url('../fonts/Noto-Sans-regular/Noto-Sans-regular.eot');
-  src: url('../fonts/Noto-Sans-regular/Noto-Sans-regular.eot?#iefix') format('embedded-opentype'),
-       local('Noto Sans'),
-       local('Noto-Sans-regular'),
-       url('../fonts/Noto-Sans-regular/Noto-Sans-regular.woff2') format('woff2'),
-       url('../fonts/Noto-Sans-regular/Noto-Sans-regular.woff') format('woff'),
-       url('../fonts/Noto-Sans-regular/Noto-Sans-regular.ttf') format('truetype'),
-       url('../fonts/Noto-Sans-regular/Noto-Sans-regular.svg#NotoSans') format('svg');
+/* code I know I'm using */
+/* gets rid of bullets */
+
+div.polaroid {
+
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@font-face {
-  font-family: 'Noto Sans';
-  font-weight: 700;
-  font-style: normal;
-  src: url('../fonts/Noto-Sans-700/Noto-Sans-700.eot');
-  src: url('../fonts/Noto-Sans-700/Noto-Sans-700.eot?#iefix') format('embedded-opentype'),
-       local('Noto Sans Bold'),
-       local('Noto-Sans-700'),
-       url('../fonts/Noto-Sans-700/Noto-Sans-700.woff2') format('woff2'),
-       url('../fonts/Noto-Sans-700/Noto-Sans-700.woff') format('woff'),
-       url('../fonts/Noto-Sans-700/Noto-Sans-700.ttf') format('truetype'),
-       url('../fonts/Noto-Sans-700/Noto-Sans-700.svg#NotoSans') format('svg');
+div.container {
+  padding: 10px 20px;
 }
 
-@font-face {
-  font-family: 'Noto Sans';
-  font-weight: 400;
-  font-style: italic;
-  src: url('../fonts/Noto-Sans-italic/Noto-Sans-italic.eot');
-  src: url('../fonts/Noto-Sans-italic/Noto-Sans-italic.eot?#iefix') format('embedded-opentype'),
-       local('Noto Sans Italic'),
-       local('Noto-Sans-italic'),
-       url('../fonts/Noto-Sans-italic/Noto-Sans-italic.woff2') format('woff2'),
-       url('../fonts/Noto-Sans-italic/Noto-Sans-italic.woff') format('woff'),
-       url('../fonts/Noto-Sans-italic/Noto-Sans-italic.ttf') format('truetype'),
-       url('../fonts/Noto-Sans-italic/Noto-Sans-italic.svg#NotoSans') format('svg');
+div {
+  background-color: floralwhite;
+  position: static;
 }
 
-@font-face {
-  font-family: 'Noto Sans';
-  font-weight: 700;
-  font-style: italic;
-  src: url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.eot');
-  src: url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.eot?#iefix') format('embedded-opentype'),
-       local('Noto Sans Bold Italic'),
-       local('Noto-Sans-700italic'),
-       url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.woff2') format('woff2'),
-       url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.woff') format('woff'),
-       url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.ttf') format('truetype'),
-       url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.svg#NotoSans') format('svg');
+ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
+
+/* Make Nav Horizontal */
+li {
+  display: inline;
+  width: 60px;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px !important;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* github css code */
 
 body {
-  background-color: #e5f2ff;
-  padding:50px;
+  margin: auto;
+  background-image: url("images/floral-paper.jpg");
+  padding-top: 10%;
+  padding-bottom: 11%;
   font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#727272;
   font-weight:400;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#222;
+
+  background-color: floralwhite;
   margin:0 0 20px;
 }
 
@@ -77,6 +123,7 @@ h1, h2, h3 {
 
 h1 {
   font-size:28px;
+
 }
 
 h2 {
@@ -87,6 +134,7 @@ h3, h4, h5, h6 {
   color:#494949;
 }
 
+/* text link attributes */
 a {
   color:#39c;
   text-decoration:none;
@@ -153,12 +201,8 @@ th {
   color:#444;
 }
 
-img {
-  max-width:100%;
-}
-
 header {
-  width:270px;
+  width:300px;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
@@ -223,10 +267,31 @@ header ul a strong {
   color:#222;
 }
 
+img {
+  position: static;
+  background-color: floralwhite;
+  /*padding-bottom: 20%;*/
+  padding-right: 4%;
+  max-width:30%;
+  border-radius: 50%;
+}
+
+aside {
+  background-color: floralwhite;
+  float: left;
+  position: static;
+
+}
+
 section {
-  width:500px;
-  float:right;
-  padding-bottom:50px;
+  word-wrap: normal;
+  margin: auto;
+  background-color: floralwhite;
+  max-width:50%;
+  position: static;
+  padding: 3%;
+  padding-bottom: 7%;
+
 }
 
 small {
@@ -241,14 +306,17 @@ hr {
 }
 
 footer {
-  width:270px;
-  float:left;
-  position:fixed;
-  bottom:50px;
-  -webkit-font-smoothing:subpixel-antialiased;
+
+
 }
 
+
 @media print, screen and (max-width: 960px) {
+  body {
+    padding-top: 12%;
+    padding-bottom: 11%;
+    word-wrap:break-word;
+  }
 
   div.wrapper {
     width:auto;
@@ -256,20 +324,30 @@ footer {
   }
 
   header, section, footer {
-    float:none;
     position:static;
     width:auto;
   }
 
-  header {
-    padding-right:320px;
-  }
+  /*header {*/
+  /*padding-right:320px;*/
+  /*}*/
 
   section {
-    border:1px solid #e5e5e5;
-    border-width:1px 0;
-    padding:20px 0;
-    margin:0 0 20px;
+    word-wrap: normal;
+    margin: auto;
+    background-color: floralwhite;
+    max-width:50%;
+    padding: 3%;
+    padding-bottom: 7%;
+  }
+
+  img {
+    position: static;
+    background-color: floralwhite;
+    /*padding-bottom: 20%;*/
+    padding-right: 4%;
+    max-width:30%;
+    border-radius: 50%;
   }
 
   header a small {
@@ -280,16 +358,6 @@ footer {
     position:absolute;
     right:50px;
     top:52px;
-  }
-}
-
-@media print, screen and (max-width: 720px) {
-  body {
-    word-wrap:break-word;
-  }
-
-  header {
-    padding:0;
   }
 
   header ul, header p.view {
@@ -303,7 +371,14 @@ footer {
 
 @media print, screen and (max-width: 480px) {
   body {
-    padding:15px;
+    padding-top: 20%;
+    padding-bottom: 11%;
+    margin: auto;
+  }
+
+  header, section {
+    position: static;
+    padding:20px;
   }
 
   header ul {
@@ -317,8 +392,10 @@ footer {
 
 @media print {
   body {
-    padding:0.4in;
+    padding-top: 10%;
+    padding-bottom: 11%;
     font-size:12pt;
-    color:#444;
   }
 }
+
+

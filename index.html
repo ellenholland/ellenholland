@@ -6,7 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="javascripts/scale.fix.js"></script>
+
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#aboutme">About</a>
+      <a href="https://www.dropbox.com/s/887monvy2zd7yjr/Ellen_Holland_Resume_DropBox.docx?dl=0">My
+        Resume</a>
+      <a href="mailto:ellenh@iastate.edu">Contact Me</a>
+    </div>
+
+
+    <!-- Banner navigation -->
+    <ul>
+      <!-- Use any element to open the sidenav -->
+      <!-- <li><a><span onclick="openNav()">Open Menu</span></a></li> -->
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="https://www.dropbox.com/s/887monvy2zd7yjr/Ellen_Holland_Resume_DropBox.docx?dl=0">My
+        Resume</a></li>
+      <li><a href="mailto:ellenh@iastate.edu">Contact Me</a></li>
+
+    </ul>
 
     <title>Ellen Holland</title>
 
@@ -14,79 +37,37 @@
     </head>
 
       <body>
-        <div class="wrapper">
-          <header>
 
-            <!-- bio section-->
-            <h1>Ellen Holland</h1>
-            <!-- picture /-->
-            <div class="col s12 m12 l6">
-              <img class="circle responsive-img" src="images/ellen_soldering.jpg">
-            </div>
 
-            <p>Hello! I'm a  student at Iowa State University studying Software Engineering. I am also the Vice
-              President and Secretary of <a href="http://digitalwomen.ece.iastate.edu">Digital Women</a>. I am always
-              excited and ready to learn more about the world of software, because in my mind there is no better
-              feeling than nerding out over technology with my fellow techies.</p> <!-- wanted to say softies -->
+      <section>
+        <!-- bio section-->
+        <h1>Ellen Holland</h1>
+        <!-- picture /-->
 
-            <!-- Contact info -->
-            <div>
-              <footer>
-                <p>
-                  <a href="https://www.dropbox.com/s/887monvy2zd7yjr/Ellen_Holland_Resume_DropBox.docx?dl=0">My Resume</a><br>
-                  <a href="mailto:ellenh@iastate.edu">Contact Me</a>
-                </p>
-              </footer>
-            </div>
-          </header>
+        <img src="images/ellen_soldering.jpg" align="left" >
 
-          <section>
-            <h3>
-              <a id = "aboutme" class="anchor" href="#aboutme" aria-hidden="true"></a>Digital Women</h3>
 
-                <p>Digital Women is a club dedicated to women in computing majors. This includes but of course is not
-                  limited to majors such as Computer Science, Software Engineering, Computer Engineering, and Electrical
-                  Engineering. Our goal is to provide a comfortable environment for women to network with companies and
-                  other women in their majors. Each meeting consists of either a social activity, a craft activity (such
-                  as painting or soldering a <a
-                          href="http://www.parts-express.com/velleman-3d-christmas-tree-kit--320-166?utm_source=google&utm_medium=cpc&utm_campaign=pla">Christmas tree</a>),
-                  or a company visit.
-                  <br>
-                  <br>
-                  As secretary I am in charge of taking meeting notes and sending (exciting) emails. As Vice President, I
-                  help the President with decision making and reminding/notifying executives and members of important
-                  events or tasks that need to be done. I am also the founder of Digital Women's <a
-                          href="http://digitalwomen.tumblr.com">Tumblr</a>. A simple blog where people follow eachother,
-                  like, blog, or re-blog posts. This website shows some insight on my famous club emails.
-                </p>
+        Hello! I'm a  student at Iowa State University studying Software Engineering. I am also the Vice
+        President and Secretary of <a href="http://digitalwomen.ece.iastate.edu">Digital Women</a>. I am always
+        excited and ready to learn more about the world of software, because in my mind there is no better
+        feeling than nerding out over technology with my fellow techies. <!-- wanted to say softies -->
 
-            <h3>
-              <a id="Skills/Academics" class="anchor" href="#Skills/Academics" aria-hidden="true"><span
-                      aria-hidden="true" class="octicon octicon-link"></span></a>Skills/Academics</h3>
+      </section>
 
-                <p>
 
-                  C - CPRE 185/CPRE 288
-                  <br>
-                  Java - COMS 227/COMS 228
-                  <br>
-                  Python - COMS 104
-                  <br>
-                  Verilog/Schematic Blocks - CPRE 281
+        <script>
+          /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "200px";
+            document.getElementById("main").style.marginLeft = "200px";
+          }
 
-                </p>
-
-            <h3>
-              <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span
-                      aria-hidden="true" class="octicon octicon-link"></span></a>Personal</h3>
-                <p>I'm a full-time student, a Vice President and Secretary, a Netflix Junky, a binge learner, a stress
-                  conqueror. But one of the best things that I am is an aunt/sister/daughter/friend.</p>
-
-          </section>
-
-        </div>
-
-        <script src="javascripts/scale.fix.js"></script>
+          /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+          }
+        </script>
 
       </body>
 </html>
