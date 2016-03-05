@@ -4,6 +4,7 @@
 
 div {
   position: static;
+
 }
 
 
@@ -16,6 +17,9 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
+
+  box-shadow: #222222;
+
 }
 
 /* Make Nav Horizontal */
@@ -93,7 +97,6 @@ body {
   height: 100%;
   margin: auto;
   background-image: url("images/floral-paper.jpg");
-  background-repeat: no-repeat;
   padding-top: 10%;
   padding-bottom: 11%;
   font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -285,6 +288,7 @@ section {
   max-width:50%;
   position: static;
   padding: 3%;
+
 
 }
 
