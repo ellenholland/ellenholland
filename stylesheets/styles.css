@@ -3,9 +3,9 @@
 
 
 div {
-  background-color: floralwhite;
   position: static;
 }
+
 
 ul {
   position: fixed;
@@ -101,7 +101,7 @@ body {
   font-weight:400;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
 
   background-color: floralwhite;
   margin:0 0 20px;
@@ -116,6 +116,7 @@ h1, h2, h3 {
 }
 
 h1 {
+  margin: 0;
   font-size:28px;
 
 }
@@ -265,7 +266,6 @@ img {
   position: static;
   background-color: floralwhite;
   /*padding-bottom: 20%;*/
-  padding-right: 4%;
   padding: 4%;
   max-width:30%;
   border-radius: 50%;
