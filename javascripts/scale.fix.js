@@ -32,7 +32,7 @@ function closeNav() {
 //Fun
 var flag = 1;
 function f1() {
-  alert("Yes. you are right ")
+  alert("D'aww")
 }
 
 function f() {
@@ -48,9 +48,18 @@ function f() {
   }
   else if(flag==3) {
     Bn.style.top=235;
-    Bn.style.left=360;
+    Bn.style.right=500;
     flag=1;
   }
 }
+
+//// URLS
+//
+//
+//URL = new URL(aboutme, "")
+//
+//
+//URL gamelan = new URL("http://www.gamelan.com/");
+//URL gamelanNetwork = new URL(gamelan, "Gamelan.network.html");
 
 

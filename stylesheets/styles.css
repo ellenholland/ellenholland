@@ -4,7 +4,8 @@
 
 div {
   position: static;
-
+  background-color: floralwhite;
+  padding: 4%;
 }
 
 
@@ -276,9 +277,6 @@ img {
 
 aside {
   background-color: floralwhite;
-  float: left;
-  position: static;
-
 }
 
 section {
@@ -288,8 +286,6 @@ section {
   max-width:50%;
   position: static;
   padding: 3%;
-
-
 }
 
 small {
