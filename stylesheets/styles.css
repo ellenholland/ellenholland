@@ -13,12 +13,9 @@ ul {
   position: fixed;
   top: 0;
   width: 100%;
-  list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: #333;
-
   box-shadow: #222222;
 
 }
@@ -286,6 +283,12 @@ section {
   max-width:50%;
   position: static;
   padding: 3%;
+
+
+}
+
+.bordered {
+  border: 1.8px solid #252525;
 }
 
 small {
