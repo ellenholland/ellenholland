@@ -26,12 +26,21 @@ function f() {
         flag =1;
 
     }
-
-    //    Bn.style.top=235;
-    //    Bn.style.right=500;
-    //    flag=1;
-    //}
 }
 
-//left:(Math.random()*200)+"px",
-//    top:(Math.random()*200)+"px",
+
+// //Game JS
+//
+//function startGame() {
+//    myGameArea.start();
+//}
+//
+//var myGameArea = {
+//    canvas : document.createElement("canvas"),
+//    start : function() {
+//        this.canvas.width = 480;
+//        this.canvas.height = 270;
+//        this.context = this.canvas.getContext("2d");
+//        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+//    }
+//}

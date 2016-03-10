@@ -8,6 +8,18 @@ div {
   padding: 4%;
 }
 
+.maindiv {
+  word-wrap: normal;
+  margin: auto;
+  max-width:50%;
+  position: relative;
+  padding: 3%;
+
+  /*border*/
+  border: 1.8px solid #252525;
+
+}
+
 
 ul {
   position: fixed;
@@ -266,25 +278,19 @@ header ul a strong {
 img {
   position: static;
   background-color: floralwhite;
-  /*padding-bottom: 20%;*/
-  padding: 4%;
+  /*padding: 4%;*/
   max-width:30%;
-  border-radius: 50%;
 }
 
-aside {
-  background-color: floralwhite;
-}
 
 section {
   word-wrap: normal;
   margin: auto;
   background-color: floralwhite;
   max-width:50%;
+  min-height: 100%;
   position: static;
   padding: 3%;
-
-
 }
 
 .bordered {
@@ -301,12 +307,6 @@ hr {
   height:1px;
   margin:0 0 20px;
 }
-
-footer {
-
-
-}
-
 
 @media print, screen and (max-width: 960px) {
   body {
@@ -333,6 +333,7 @@ footer {
     background-color: floralwhite;
     max-width:65%;
     padding: 3%;
+
   }
 
   img {
@@ -340,7 +341,7 @@ footer {
     background-color: floralwhite;
     /*padding-bottom: 20%;*/
     max-width:30%;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
   }
 
   header a small {
@@ -369,6 +370,14 @@ footer {
     padding-top: 20%;
     padding-bottom: 11%;
     font-size: 14pt;
+  }
+
+  img {
+    position: static;
+    background-color: floralwhite;
+    /*padding-bottom: 20%;*/
+    max-width:160px;
+    /*border-radius: 50%;*/
   }
 
   header, section {
