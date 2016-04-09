@@ -21,7 +21,7 @@ div {
 }
 
 
-ul {
+ul.banner {
   position: fixed;
   top: 0;
   width: 100%;
@@ -30,6 +30,35 @@ ul {
   background-color: #333;
   box-shadow: #222222;
 
+}
+
+/*Top nav for mobile*/
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {
+  background-color: #111;
+}
+
+ul.topnav li.icon {
+  display: none;
 }
 
 /* Make Nav Horizontal */
@@ -308,13 +337,34 @@ hr {
   margin:0 0 20px;
 }
 
-@media print, screen and (max-width: 960px) {
+@media screen and (max-width: 680px) {
   body {
     width: 100%;
     height: 100%;
     padding-top: 15%;
     padding-bottom: 11%;
     word-wrap: normal;
+  }
+
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
   }
 
   div.wrapper {

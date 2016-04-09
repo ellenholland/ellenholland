@@ -29,32 +29,13 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
 }
 
+function myFunction() {
+  document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+}
 
 
 //body {margin:0;}
-//ul.topnav {
-//  list-style-type: none;
-//  margin: 0;
-//  padding: 0;
-//  overflow: hidden;
-//  background-color: #333;
-//}
-//
-//ul.topnav li {float: left;}
-//
-//ul.topnav li a {
-//  display: inline-block;
-//  color: #f2f2f2;
-//  text-align: center;
-//  padding: 14px 16px;
-//  text-decoration: none;
-//  transition: 0.3s;
-//  font-size: 17px;
-//}
-//
-//ul.topnav li a:hover {background-color: #111;}
-//
-//ul.topnav li.icon {display: none;}
+
 //
 //@media screen and (max-width:680px) {
 //  ul.topnav li:not(:first-child) {display: none;}
