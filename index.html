@@ -1,83 +1,138 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="icon" href="http://example.com/favicon.png">-->
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-    <script src="javascripts/scale.fix.js"></script>
-
-
-    <!--<div id="mySidenav" class="sidenav">-->
-      <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
-      <!--<a href="#aboutme">About</a>-->
-      <!--<a href="https://www.dropbox.com/s/887monvy2zd7yjr/Ellen_Holland_Resume_DropBox.docx?dl=0" target="_blank">My-->
-        <!--Resume</a>-->
-      <!--<a href="mailto:ellenh@iastate.edu">Contact Me</a>-->
-    <!--</div>-->
-
-
-    <!-- Banner navigation -->
-    <ul class = "banner">
-      <!-- Use any element to open the sidenav -->
-      <!-- <li><a><span onclick="openNav()">Open Menu</span></a></li> -->
-      <li><a href="index.html">Home</a></li>
-      <li><a href="aboutme.html">About Me</a></li>
-      <!--<li><a href="fun.html">Fun!</a></li>-->
-      <li><a href="comingsoon.html">Projects</a></li>
-      <li><a href="https://www.dropbox.com/s/887monvy2zd7yjr/Ellen_Holland_Resume_DropBox.docx?dl=0" target="_blank"
-             style = "float: right;">My Resume</a></li>
-      <li><a href="mailto:ellenh@iastate.edu" style = "float: right;">Contact Me</a></li>
-
-    </ul>
-
-    <!--<div id = "myTopnav" class = "tippytop">-->
-      <!--<ul class="topnav">-->
-        <!--<li><a class="active" href="#home">Home</a></li>-->
-        <!--<li><a href="#news">News</a></li>-->
-        <!--<li><a href="#contact">Contact</a></li>-->
-        <!--<li><a href="#about">About</a></li>-->
-        <!--<li class="icon">-->
-          <!--<a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>-->
-        <!--</li>-->
-      <!--</ul>-->
-    <!--</div>-->
-
+<head>
+  <meta charset="utf-8">
     <title>Ellen Holland</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
 
-    <![endif]-->
+
+  <!-- Mobile Menu Icon, does not work offline -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!--[endif]-->
     </head>
 
-      <body>
+  <!-- Navigation Bar -->
+  <div class="navbar-fixed">
+    <nav class="blue-grey darken-3" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="index.html" class="center-align"></a>
+        <ul class="right hide-on-med-and-down">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+          <!--<li><a href="fun.html">Fun!</a></li>-->
+          <li><a href="comingsoon.html">Projects</a></li>
+          <li><a href="https://www.dropbox.com/s/887monvy2zd7yjr/Ellen_Holland_Resume_DropBox.docx?dl=0"
+                 target="_blank">My Resume</a></li>
+          <li><a href="mailto:ellenh@iastate.edu">Contact Me</a></li>
+        </ul>
 
-      <section class = bordered style = "padding-bottom: 10%;">
-        <!-- bio section-->
-        <h1>Ellen Holland</h1>
+        <!-- mobile nav -->
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+          <!--<li><a href="fun.html">Fun!</a></li>-->
+          <li><a href="comingsoon.html">Projects</a></li>
+          <li><a href="https://www.dropbox.com/s/887monvy2zd7yjr/Ellen_Holland_Resume_DropBox.docx?dl=0"
+                 target="_blank">My Resume</a></li>
+          <li><a href="mailto:ellenh@iastate.edu">Contact Me</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
+
+<body>
+
+  <div class="parallax-container">
+    <div class="parallax"><img src="images/background/mvaerial.jpg"></div>
+
+    <div class="header-card">
+      <h1 class="center-align">Ellen Holland</h1>
+    </div>
+    <div class="foot-card">
+      <p class="right-align small" style="text: white; padding-right: 2%;">Mount Vernon, Iowa</p>
+    </div>
+
+  </div>
+
+  <div class="container">
+    <!-- bio section-->
+    <div  style="position: center; padding: 2%;">
+      <div class = "row">
+        <div class="col s7" style="padding-right: 5%;">
+          <h3>A little about me</h3>
+
+          I grew up and went to school in a small town in Iowa called Mount Vernon. In high school I took part in Band
+          and Robotics club. It was in these two disciplines that I discovered a love of creating amazing and beautiful
+          things while learning to challenge their difficulties.
+
+          <br><br>
+
+          I am now a student at Iowa State University studying Computer Science. I am the Vice President, Secretary
+          and webmaster of <a style="color: #077273; text-decoration: underline;" href="http://digitalwomen.ece.iastate.edu"
+          target="_blank">Digital Women</a>, a club for women in computing majors. Since coming to University I have
+          learned more from my peers and experiences than I ever thought to learn in my classes. It truly is an
+          amazing opportunity.
+        </div>
+
+        <div class="col s4">
+          <!--<div style="align-items: center;">-->
+          <h3> Interests</h3>
+          <div class="chip">Programming</div>
+          <div class="chip">Working in a Team</div>
+          <div class="chip">Learning</div>
+          <div class="chip">Creating</div>
+          <div class="chip">Video Games</div>
+          <div class="chip">Cats</div>
+          <div class="chip">Netflix</div>
+          <div class="chip">British TV</div>
+          <div class="chip">Chocolate</div>
+          <div class="chip">Reddit</div>
+          <div class="chip">Lord of the Rings</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Iowa State Parallax -->
+  <div class="parallax-container">
+    <div class="parallax"><img src="images/background/iowastate.jpg"></div>
+    <div class="foot-card opaque-black">
+      <p class="right-align small" style="text: white; padding-right: 2%;">Iowa State University, Ames</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer blue-grey darken-3">
+    <div class="white-text">
+      <div class="container center-align">
+
+        <!-- Contact Logos -->
+        <!-- email -->
+        <a href="mailto:ellenh@iastate.edu"> <i class="fa fa-envelope"
+                aria-hidden="true" style="font-size: 60px; padding-right: 25%;" ></i></a>
+        <!-- linkedin -->
+        <a href="https://www.linkedin.com/in/ellen-holland-316224101" target="_blank"><i
+                class="fa fa-linkedin-square" aria-hidden="true" style="font-size: 60px; padding-right: 25%;"></i></a>
+        <!-- facebook -->
+        <a href="https://www.facebook.com/ellen.holland.10" target="_blank"><i
+                class="fa fa-facebook-official fa-4" aria-hidden=" true" style="font-size: 60px;"></i></a>
         <br>
-        <!-- picture /-->
+        <br>
+      </div>
+    </div>
+  </footer>
 
-          <img src="images/ellen_soldering.jpg" align="left" style = "padding-right: 5%; clear: both;" >
-
-          <br>
-          Hello! I'm a  student at Iowa State University studying Software Engineering. I am also the Vice
-          President and Secretary of <a href="http://digitalwomen.ece.iastate.edu">Digital Women</a>. I am always
-          excited and ready to learn more about the world of software, because in my mind there is no better
-          feeling than nerding out over technology with my fellow techies. <!-- wanted to say softies -->
-
-        <!--<div>-->
-          <!--&lt;!&ndash;<button ><a href="fun.html">&ndash;&gt;-->
-            <!--&lt;!&ndash;&lt;!&ndash;_</a>&ndash;&gt;&ndash;&gt;-->
-          <!--&lt;!&ndash;</button>&ndash;&gt;-->
-        <!--</div>-->
-
-      </section>
-
-      </body>
+  <!-- jQuery is required by Materialize to function -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript"></script>
+  <script src="js/init.js"></script>
+</body>
 </html>
-
 
 
 

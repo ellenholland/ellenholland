@@ -3,26 +3,42 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <!-- Mobile Menu Icon, does not work offline -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+    <!-- Navigation Bar -->
+    <div class="navbar-fixed">
+        <nav class="blue-grey darken-3" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="index.html" class="brand-logo"> Ellen Holland</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="aboutme.html">About Me</a></li>
+                    <!--<li><a href="fun.html">Fun!</a></li>-->
+                    <li><a href="comingsoon.html">Projects</a></li>
+                    <li><a href="https://www.dropbox.com/s/887monvy2zd7yjr/Ellen_Holland_Resume_DropBox.docx?dl=0"
+                           target="_blank">My Resume</a></li>
+                    <li><a href="mailto:ellenh@iastate.edu">Contact Me</a></li>
+                </ul>
 
-    <!-- Banner navigation -->
-    <ul class = "banner">
-        <!-- Use any element to open the sidenav -->
-        <!-- <li><a><span onclick="openNav()">Open Menu</span></a></li> -->
-        <li><a href="index.html">Home</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
-        <!--<li><a href="fun.html">Fun!</a></li>-->
-        <li><a href="comingsoon.html">Projects</a></li>
-        <li><a href="https://www.dropbox.com/s/887monvy2zd7yjr/Ellen_Holland_Resume_DropBox.docx?dl=0" target="_blank"
-               style = "float: right;">My Resume</a></li>
-        <li><a href="mailto:ellenh@iastate.edu" style = "float: right;">Contact Me</a></li>
-
-    </ul>
+                <!-- mobile nav -->
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <!--<li><a href="fun.html">Fun!</a></li>-->
+                    <li><a href="comingsoon.html">Projects</a></li>
+                    <li><a href="https://www.dropbox.com/s/887monvy2zd7yjr/Ellen_Holland_Resume_DropBox.docx?dl=0"
+                           target="_blank">My Resume</a></li>
+                    <li><a href="mailto:ellenh@iastate.edu">Contact Me</a></li>
+                </ul>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+    </div>
 
     <title>Ellen Holland</title>
 
@@ -31,42 +47,109 @@
 
 <body>
 
-    <section id = "aboutme" href="#aboutme" class = "bordered">
-        <h3>Digital Women</h3>
-        
-            <p>
-            Digital Women is a club dedicated to women in computing majors. This includes but of course is not
-            limited to majors such as Computer Science, Software Engineering, Computer Engineering, and Electrical
-            Engineering. Our goal is to provide a comfortable environment for women to network with companies and
-            other women in their majors. Each meeting consists of either a social activity, a craft activity (such
-            as painting or soldering a <a
-            href="http://www.parts-express.com/velleman-3d-christmas-tree-kit--320-166?utm_source=google&utm_medium=cpc&utm_campaign=pla">Christmas tree</a>),
-            or a company visit.
-            </p>
-            <p>
-            As secretary I am in charge of taking meeting notes and sending (exciting) emails. As Vice President, I
-            help the President with decision making and reminding/notifying executives and members of important
-            events or tasks that need to be done. I am also the founder of Digital Women's <a
-            href="http://digitalwomen.tumblr.com">Tumblr</a>. A simple blog where people follow eachother,
-            like, blog, or re-blog posts. This website shows some insight on my famous club emails.
-            </p>
+    <!--<section id = "aboutme" href="#aboutme">-->
+    <div  style="position: center; padding: 2%;">
+        <div class = "row">
+            <div class="col s6" style="padding-right: 3%; padding-left: 3%;">
+            <h4>Digital Women</h4>
 
-        <h3 id="Skills/Academics" href="#Skills/Academics">Skills/Academics</h3>
-            <p>
 
-            C - CPRE 185/CPRE 288
-            <br>
-            Java - COMS 227/COMS 228
-            <br>
-            Python - COMS 104
-            <br>
-            Verilog/Schematic Blocks - CPRE 281
+                Digital Women is a club dedicated to women in computing majors. Our goal is to provide a comfortable
+                environment for women to network with companies and other women in their majors. Our meetings
+                consist of company visits, social activities, or .
 
-            </p>
-        <h3 id="authors-and-contributors" href="#Personal">Personal</h3>
-            <p>I'm a full-time student, a Vice President and Secretary, a Netflix Junky, a binge learner, a stress
-            conqueror. But one of the best things that I am is an aunt/sister/daughter/friend.</p>
+                <br><br>
 
-    </section>
+                As secretary I am in charge of taking meeting notes and sending (exciting) emails. As Vice President, I
+                help the President with decision making and reminding/notifying executives and members of important
+                events or tasks that need to be done. I am also the founder of Digital Women's <a style="color:
+                #077273; text-decoration: underline;" href="http://digitalwomen.tumblr.com" target="_blank">Tumblr
+                </a> blog. I am also the <a style="color: #077273; text-decoration: underline;"
+                href="http://digitalwomen.tumblr.com" target="_blank">Webmaster</a>, in which I maintain and update
+                our club website.
+
+                <br><br>
+            <h4 id="Skills/Academics" href="#Skills/Academics">Academics</h4>
+                <p>
+
+                <table class="striped">
+                    <thead>
+                    <tr>
+                        <th data-field="id">Skill</th>
+                        <th data-field="name">Course</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>Java</td>
+                        <td>COMS 227/COMS 228</td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>CPRE 185/CPRE 288</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>COMS 104</td>
+                    </tr>
+                    <tr>
+                        <td>Verilog/Schematic Blocks</td>
+                        <td>CPRE 281</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+
+                <!--C - CPRE 185/CPRE 288-->
+                <!--<br>-->
+                <!--Java - -->
+                <!--<br>-->
+                <!--Python - -->
+                <!--<br>-->
+                <!--Verilog/Schematic Blocks - CPRE 281-->
+
+                <!--</p>-->
+            <!--<h3 id="authors-and-contributors" href="#Personal">Personal</h3>-->
+                <!--<p>I'm a full-time student, a Vice President and Secretary, a Netflix Junky, a binge learner, a stress-->
+                <!--conqueror. But one of the best things that I am is an aunt/sister/daughter/friend.</p>-->
+            <!--</div>-->
+            </div>
+            <div class="col s6">
+                <div class="parallax-right">
+                    <div class="parallax"><img src="images/digitalwomen/9.jpg"></div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer blue-grey darken-3">
+        <div class="white-text">
+            <div class="container center-align">
+
+                <!-- Contact Logos -->
+                <!-- email -->
+                <a href="mailto:ellenh@iastate.edu"> <i class="fa fa-envelope"
+                                                        aria-hidden="true" style="font-size: 60px; padding-right: 25%;" ></i></a>
+                <!-- linkedin -->
+                <a href="https://www.linkedin.com/in/ellen-holland-316224101" target="_blank"><i
+                        class="fa fa-linkedin-square" aria-hidden="true" style="font-size: 60px; padding-right: 25%;"></i></a>
+                <!-- facebook -->
+                <a href="https://www.facebook.com/ellen.holland.10" target="_blank"><i
+                        class="fa fa-facebook-official fa-4" aria-hidden=" true" style="font-size: 60px;"></i></a>
+                <br>
+                <br>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery is required by Materialize to function -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript"></script>
+    <script src="js/init.js"></script>
 </body>
 </html>

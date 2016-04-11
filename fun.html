@@ -4,26 +4,42 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="copyright" content="http://www.javascriptbank.com" />
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <script src="javascripts/funstuff.js"></script>
-
-
-    <ul>
-        <!-- Use any element to open the sidenav -->
-        <!-- <li><a><span onclick="openNav()">Open Menu</span></a></li> -->
-        <li><a href="index.html">Home</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
-        <!--<li><a href="fun.html">Fun!</a></li>-->
-        <li><a href="comingsoon.html">Projects</a></li>
-        <li><a href="https://www.dropbox.com/s/887monvy2zd7yjr/Ellen_Holland_Resume_DropBox.docx?dl=0" target="_blank"
-               style = "float: right;">My Resume</a></li>
-        <li><a href="mailto:ellenh@iastate.edu" style = "float: right;">Contact Me</a></li>
-
-    </ul>
+    <script src="js/funstuff.js"></script>
+    <!-- Mobile Menu Icon, does not work offline -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 </head>
-<body>
+    <!-- Navigation Bar -->
+    <div class="navbar-fixed">
+        <nav class="blue-grey darken-3" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="index.html" class="brand-logo"> Ellen Holland</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <!--<li><a href="fun.html">Fun!</a></li>-->
+                    <li><a href="comingsoon.html">Projects</a></li>
+                    <li><a href="https://www.dropbox.com/s/887monvy2zd7yjr/Ellen_Holland_Resume_DropBox.docx?dl=0"
+                           target="_blank">My Resume</a></li>
+                    <li><a href="mailto:ellenh@iastate.edu">Contact Me</a></li>
+                </ul>
+
+                <!-- mobile nav -->
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <!--<li><a href="fun.html">Fun!</a></li>-->
+                    <li><a href="comingsoon.html">Projects</a></li>
+                    <li><a href="https://www.dropbox.com/s/887monvy2zd7yjr/Ellen_Holland_Resume_DropBox.docx?dl=0"
+                           target="_blank">My Resume</a></li>
+                    <li><a href="mailto:ellenh@iastate.edu">Contact Me</a></li>
+                </ul>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+    </div>
+<body style="background-color: #dde9ff;">
     <!--http://www.chami.com/tips/internet/010597I.html-->
     <section class = bordered>
 
@@ -52,5 +68,10 @@
         <!--</div>-->
     <!--</section>-->
 
+    <!-- jQuery is required by Materialize to function -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript"></script>
+    <script src="js/init.js"></script>
 </body>
 </html>
