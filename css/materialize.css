@@ -5148,7 +5148,6 @@ button.btn-floating {
 .waves-circle {
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
-  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
 }
 
 .waves-input-wrapper {
