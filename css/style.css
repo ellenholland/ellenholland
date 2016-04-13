@@ -7,11 +7,11 @@ a {
     color: white;
 }
 
-.parallax-container {
-    position: relative;
-    overflow: hidden;
-    height: 650px;
-}
+/*.parallax-container {*/
+    /*position: relative;*/
+    /*overflow: hidden;*/
+    /*height: 600px;*/
+/*}*/
 
 .parallax-right {
     position: relative;
@@ -42,6 +42,23 @@ a {
     /*transform: translateX(-50%);*/
 }
 
+
+.parallax-container {
+    min-height: 635px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255,255,255,.9);
+}
+
+.parallax-container .section {
+    max-width: 100%;
+}
+
+/*.parallax-container img*/
+/*{*/
+    /*min-width: 100%;*/
+/*}*/
+
 @media only screen and (max-width : 992px) {
     .parallax-container .section {
         position: absolute;
@@ -59,7 +76,9 @@ a {
     /*margin: auto;*/
     background: rgba(0, 0, 0, 0.5);
     color: white;
+    /*margin: auto;*/
     /*font-family: sans-serif;*/
+
 }
 
 .foot-card {
