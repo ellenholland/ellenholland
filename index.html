@@ -6,18 +6,19 @@
   <title>Ellen Holland</title>
 
   <!-- CSS -->
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+  <!--<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
+  <!--<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <script src="js/enquire.min.js"></script>
+  <!--<script src="js/enquire.min.js"></script>-->
 
 
   <!-- Navigation Bar -->
   <div class="navbar-fixed">
     <nav class="blue-grey darken-3" role="navigation">
       <div class="nav-wrapper container">
-        <a id="logo-container" href="index.html" class="brand-logo"> Ellen Holland</a>
+        <a id="logo-container" href="index.html" class="brand-logo">Ellen Holland</a>
         <ul class="right hide-on-med-and-down">
           <li class="active"><a href="index.html">Home</a></li>
           <li><a href="aboutme.html">About Me</a></li>
@@ -25,7 +26,7 @@
           <li><a href="comingsoon.html">Projects</a></li>
           <li><a href="https://www.dropbox.com/s/887monvy2zd7yjr/Ellen_Holland_Resume_DropBox.docx?dl=0"
                  target="_blank">My Resume</a></li>
-          <li><a href="mailto:ellenh@iastate.edu">Contact Me</a></li>
+          <li><a href="contactme.html">Contact Me</a></li>
         </ul>
 
         <!-- mobile nav -->
@@ -36,25 +37,45 @@
           <li><a href="comingsoon.html">Projects</a></li>
           <li><a href="https://www.dropbox.com/s/887monvy2zd7yjr/Ellen_Holland_Resume_DropBox.docx?dl=0"
                  target="_blank">My Resume</a></li>
-          <li><a href="mailto:ellenh@iastate.edu">Contact Me</a></li>
+          <li><a href="contactme.html">Contact Me</a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
     </nav>
   </div>
-
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+    /*body {*/
+    /*font-family: 'Roboto Condensed', sans-serif;*/
+    /*}*/
+    .image-mv {
+      width: 100%;
+      height: 91%;
+      background-image: url(stylesheets/images/mvaerial.jpg);
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+    .image-isu {
+      width: 100%;
+      height: 91%;
+      background-image: url(images/background/iowastate.jpg);
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+  </style>
 </head>
-<body>
+<body >
 
-  <div class="parallax-container">
-    <div class="parallax"><img src="images/background/mvaerial.jpg"></div>
+  <div class="image-mv">
 
     <!--<div class="header-card">-->
       <!--<h1 class="center-align">Ellen Holland</h1>-->
     <!--</div>-->
-    <div class="foot-card opaque-black">
-      <p class="right-align small" style="text: white; padding-right: 2%;">Mount Vernon, Iowa</p>
-    </div>
+    <!--<div class="foot-card opaque-black">-->
+      <!--<p class="right-align small" style="text: white; padding-right: 2%;">Mount Vernon, Iowa</p>-->
 
   </div>
 
@@ -98,11 +119,8 @@
   </div>
 
   <!-- Iowa State Parallax -->
-  <div class="parallax-container">
-    <div class="parallax"><img src="images/background/iowastate.jpg"></div>
-    <div class="foot-card opaque-black">
+  <div class="image-isu">
       <p class="right-align small" style="text: white; padding-right: 2%;">Iowa State University, Ames</p>
-    </div>
   </div>
 
   <!-- Footer -->
@@ -112,14 +130,14 @@
 
         <!-- Contact Logos -->
         <!-- email -->
-        <a href="mailto:ellenh@iastate.edu"> <i class="fa fa-envelope"
-                aria-hidden="true" style="font-size: 60px; padding-right: 25%;" ></i></a>
-        <!-- linkedin -->
-        <a href="https://www.linkedin.com/in/ellen-holland-316224101" target="_blank"><i
-                class="fa fa-linkedin-square" aria-hidden="true" style="font-size: 60px; padding-right: 25%;"></i></a>
-        <!-- facebook -->
-        <a href="https://www.facebook.com/ellen.holland.10" target="_blank"><i
-                class="fa fa-facebook-official fa-4" aria-hidden=" true" style="font-size: 60px;"></i></a>
+        <!--<a href="mailto:ellenh@iastate.edu"> <i class="fa fa-envelope"-->
+                <!--aria-hidden="true" style="font-size: 60px; padding-right: 25%;" ></i></a>-->
+        <!--&lt;!&ndash; linkedin &ndash;&gt;-->
+        <!--<a href="https://www.linkedin.com/in/ellen-holland-316224101" target="_blank"><i-->
+                <!--class="fa fa-linkedin-square" aria-hidden="true" style="font-size: 60px; padding-right: 25%;"></i></a>-->
+        <!--&lt;!&ndash; facebook &ndash;&gt;-->
+        <!--<a href="https://www.facebook.com/ellen.holland.10" target="_blank"><i-->
+                <!--class="fa fa-facebook-official fa-4" aria-hidden=" true" style="font-size: 60px;"></i></a>-->
         <br>
         <br>
       </div>
@@ -127,9 +145,11 @@
   </footer>
 
   <!-- jQuery is required by Materialize to function -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.js"></script>
-  <script type="text/javascript"></script>
+  <!--<script type="text/javascript" src="js/materialize.js"></script>-->
+  <!--<script type="text/javascript"></script>-->
   <script src="js/init.js"></script>
 </body>
 </html>
